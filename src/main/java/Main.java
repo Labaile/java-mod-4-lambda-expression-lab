@@ -3,11 +3,7 @@ import java.util.function.IntUnaryOperator;
 
 public class Main {
     // write the nextOddNum here
-    public static NextOdd nextOddNum = (num) -> {
-        return num % 1 ;
-    };
-
-
+    public static NextOdd nextOddNum = (num) -> num += (num %2==0)? 1:2;
 
     public static void main(String[] args) {
         int num = 5;
